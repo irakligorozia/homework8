@@ -24,6 +24,7 @@
 /* task_2 */
 figure {
   margin: 80px 100px;
+  padding: 20px;
   width: 440px;
   transition: border, border-radius, box-shadow, 3s linear;
 }
@@ -38,7 +39,6 @@ figcaption {
 }
 
 figure:hover {
-  border: 20px solid white;
   border-radius: 15px;
   box-shadow: 2px 2px 60px 6px green;
 }
