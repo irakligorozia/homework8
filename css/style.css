@@ -19,14 +19,14 @@
 }
 .task_1_button:active {
   box-shadow: inset 6px 6px 8px black, inset -2px -2px 4px white;
-  text-shadow: none;
+  text-shadow: 1px 1px 2px grey;
 }
 /* task_2 */
 figure {
   margin: 80px 100px;
   padding: 20px;
   width: 440px;
-  transition: border, border-radius, box-shadow, 3s linear;
+  transition: 3s linear;
 }
 figcaption {
   font-size: 20px;
@@ -79,7 +79,7 @@ figure:hover {
   border: 16px solid red;
   border-radius: 50%;
   border-top: 16px solid blue;
-  border-bottom: 16px solid green;
+  border-left: 16px solid green;
   width: 180px;
   height: 180px;
   animation: task_4_spinner 2s linear infinite forwards;
@@ -129,16 +129,16 @@ a:hover {
   justify-content: center;
   align-items: center;
   position: relative;
-  overflow: hidden;
 }
 .task_6_p {
   z-index: 1;
 }
 .loader {
-  height: 40px;
+  width: 100%;
+  height: 100%;
   position: absolute;
   left: 0%;
-  animation: load 5s linear infinite forwards;
+  animation: load 5s linear forwards;
   border-radius: 20px;
 }
 @keyframes load {
@@ -146,7 +146,7 @@ a:hover {
     width: 0%;
   }
   100% {
-    width: 110%;
+    width: 100%;
     background-color: red;
   }
 }
